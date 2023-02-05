@@ -9,17 +9,20 @@ import ru.javarush.hibernate2.factory.MySessionFactory;
 import ru.javarush.hibernate2.handler.CustomerHandler;
 import ru.javarush.hibernate2.handler.FilmHandler;
 import org.hibernate.query.Query;
+import ru.javarush.hibernate2.handler.InventoryHandler;
 
 import java.util.List;
 import java.util.Set;
 
 public class Main {
-    FilmHandler filmHandler;
-    CustomerHandler customerHandler;
+    private FilmHandler filmHandler;
+    private CustomerHandler customerHandler;
+    private InventoryHandler inventoryHandler;
 
     public Main() {
         filmHandler = new FilmHandler();
         customerHandler = new CustomerHandler();
+        inventoryHandler = new InventoryHandler();
     }
 
 

@@ -15,11 +15,12 @@ public abstract class GenericDAO<T> {
     private final Class<T> clazz;
     private SessionFactory sessionFactory;
 
-    private int count = 0;
+    private int count;
 
     public GenericDAO(Class<T> clazz, SessionFactory sessionFactory) {
         this.clazz = clazz;
         this.sessionFactory = sessionFactory;
+        count = 0;
     }
 
     public T getById(final int id) {
@@ -70,6 +71,7 @@ public abstract class GenericDAO<T> {
 
     public void delete(final T entity) {
         getCurrentSession().delete(entity);
+        count--;
     }
 
     public void deleteById(final int entityId) {
