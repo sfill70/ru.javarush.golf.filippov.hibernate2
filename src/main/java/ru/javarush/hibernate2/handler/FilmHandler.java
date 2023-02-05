@@ -43,7 +43,7 @@ public class FilmHandler {
             film.setActors(actorDAO.getItemsRandom(1, 15));
             film.setRating(Rating.NC17);
             film.setSpecialFeatures(Set.of(Feature.TRAILERS, Feature.COMMENTARIES));
-            film.setLength((short) 123);
+            film.setLength((short) 120);
             film.setReplacementCost(BigDecimal.TEN);
             System.out.println(language.getName());
             film.setLanguage(language);
