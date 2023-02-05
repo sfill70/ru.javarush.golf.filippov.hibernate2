@@ -27,15 +27,15 @@ public class Main {
         }
     }
 
-    public void newFilmWasMade() {
+    private void newFilmWasMade() {
         filmHandler.newFilmWasMade();
     }
 
-    public Customer createCustomer() {
+    private Customer createCustomer() {
         return customerHandler.createCustomer();
     }
 
-    public Customer getRandomCustomer() {
+    private Customer getRandomCustomer() {
         return customerHandler.getRandomCustomer();
     }
 
